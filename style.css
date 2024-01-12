@@ -1,0 +1,174 @@
+body {
+ margin:0;
+ background: rgb(234, 223, 153);
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+svg.rose {
+  display: block;
+  width:600px;
+  padding-top: 10em;
+  margin-top: -100px;
+}
+
+h1 {
+ 
+  
+  
+    color: #ff69b4; /* Color del texto */
+    font-size: 36px;
+    margin-top: 100px;
+
+
+}
+
+@keyframes rose-animation {
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+       transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+  transform: scale(0);
+  transform-origin: center center;
+  opacity: 0;
+   animation: rose-animation 2s ease infinite 0.1s alternate;
+}
+.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+  transform: scale(0);
+  transform-origin: center center;
+  opacity: 0;
+   animation: rose-animation 2s ease infinite 0.34s alternate;
+}
+.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+  transform: scale(0);
+  transform-origin: center center;
+  opacity: 0;
+   animation: rose-animation 2s ease infinite 0.5s alternate;
+}
+cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+  transform: scale(0);
+  transform-origin: center center;
+  opacity: 0;
+   animation: rose-animation 2s ease infinite 0.2s alternate;
+}
+.boingInUp {
+  -webkit-animation-name: boingInUp;
+          animation-name: boingInUp;
+}
+@-webkit-keyframes boingInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-90deg);
+            transform: perspective(800px) rotateX(-90deg);
+  }
+  
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(50deg);
+            transform: perspective(800px) rotateX(50deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+            transform: perspective(800px) rotateX(0deg);
+  }
+}
+#hojas{
+  animation: boingInUp 2s ease infinite alternate  ;
+}
+@keyframes boingInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-90deg);
+            transform: perspective(800px) rotateX(-90deg);
+  }
+  
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(50deg);
+            transform: perspective(800px) rotateX(50deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+            transform: perspective(800px) rotateX(0deg);
+  }
+}
+.puffIn {
+  -webkit-animation-name: puffIn;
+          animation-name: puffIn;
+}
+@-webkit-keyframes puffIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(2,2);
+            transform: scale(2,2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+@keyframes puffIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(2,2);
+            transform: scale(2,2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+  }
+  50%{
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+#tallos{
+  animation: puffIn 2s infinite ease alternate;
+}
+#sombra_1{
+  visibility:hidden;
+}
